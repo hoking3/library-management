@@ -56,6 +56,11 @@ public class UserController {
         List<User> users = userService.list();
         return Result.success(users);
     }
+    @GetMapping("/list1")
+    public Result list1() {
+        List<User> users = userService.list();
+        return Result.success(users);
+    }
 
     @GetMapping("/page")
     public Result page(UserPageRequest userPageRequest) {
